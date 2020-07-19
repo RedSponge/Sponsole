@@ -1,0 +1,121 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	ssp: {
+		file: ssp.fnt
+	}
+	ssp_big: {
+		file: ssp.fnt
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	Black: {
+		r: 0
+		g: 0
+		b: 0
+		a: 1
+	}
+	dark: {
+		r: 0
+		g: 0.0010740653
+		b: 0.096666664
+		a: 0.50333333
+	}
+	light: {
+		r: 0.375
+		g: 0.37916663
+		b: 0.75
+		a: 0.39215687
+	}
+	mid: {
+		r: 0
+		g: 0.0055555105
+		b: 0.5
+		a: 0.39215687
+	}
+	White: {
+		r: 1
+		g: 1
+		b: 1
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	mid: {
+		name: pixel
+		color: mid
+	}
+	dark: {
+		name: pixel
+		color: dark
+	}
+	light: {
+		name: pixel
+		color: light
+	}
+	black: {
+		name: pixel
+		color: Black
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: mid
+		down: dark
+		over: light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: ssp
+		fontColor: White
+		background: dark
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: {
+		vScrollKnob: knob
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: {
+		background: knob
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.SplitPane$SplitPaneStyle: {
+	default-horizontal: {
+		handle: mid
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: {
+		font: ssp
+		up: mid
+		down: dark
+		over: light
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	default: {
+		font: ssp_big
+		fontColor: White
+		focusedFontColor: White
+		background: dark
+		focusedBackground: dark
+		cursor: cursor
+		selection: black
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: {
+		background: dark
+		titleFont: ssp
+		titleFontColor: White
+		stageBackground: dark
+	}
+}
+}

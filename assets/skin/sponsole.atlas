@@ -1,0 +1,35 @@
+
+sponsole.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cursor
+  rotate: false
+  xy: 1, 314
+  size: 8, 16
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+knob
+  rotate: false
+  xy: 13, 338
+  size: 3, 4
+  orig: 3, 4
+  offset: 0, 0
+  index: -1
+pixel
+  rotate: false
+  xy: 1, 332
+  size: 10, 10
+  split: 4, 4, 4, 4
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+ssp
+  rotate: false
+  xy: 1, 344
+  size: 506, 161
+  orig: 506, 161
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,28 @@
+stage = new com.badlogic.gdx.scenes.scene2d.Stage(new com.badlogic.gdx.utils.viewport.ScreenViewport());
+skin = new com.badlogic.gdx.scenes.scene2d.ui.Skin(com.badlogic.gdx.Gdx.files.internal("skin.json"));
+com.badlogic.gdx.Gdx.input.setInputProcessor(stage);
+
+com.badlogic.gdx.scenes.scene2d.ui.Table table = new com.badlogic.gdx.scenes.scene2d.ui.Table();
+table.setFillParent(true);
+
+
+com.badlogic.gdx.scenes.scene2d.ui.Label label = new com.badlogic.gdx.scenes.scene2d.ui.Label("lmao ex di hgskjafhksdhfkhasdlkjfahsldkjhflkjasdhlfkjhasldhflkahsldfjslhadhfas\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n", skin);
+label.setAlignment(com.badlogic.gdx.utils.Align.bottomLeft);
+label.setEllipsis("...");
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane scrollPane = new com.badlogic.gdx.scenes.scene2d.ui.ScrollPane(label, skin);
+scrollPane.setClamp(true);
+scrollPane.setFlingTime(1.0f);
+scrollPane.setOverscroll(false, false);
+table.add(scrollPane).spaceTop(10.0f).grow();
+
+table.row();
+com.badlogic.gdx.scenes.scene2d.ui.Table table1 = new com.badlogic.gdx.scenes.scene2d.ui.Table();
+
+label = new com.badlogic.gdx.scenes.scene2d.ui.Label(">", skin);
+label.setEllipsis("...");
+table1.add(label);
+
+com.badlogic.gdx.scenes.scene2d.ui.TextField textField = new com.badlogic.gdx.scenes.scene2d.ui.TextField(null, skin);
+table1.add(textField).growX();
+table.add(table1).spaceTop(10.0f).spaceBottom(10.0f).growX();
+stage.addActor(table);
